@@ -8,6 +8,7 @@ const spanLives = document.querySelector('#lives')
 const spanTime = document.querySelector('#time')
 const spanRecord = document.querySelector('#record')
 const pResult = document.querySelector('#result')
+const btnRestart = document.querySelector('#restar')
 
 let canvasSize;
 let elementsSize;
@@ -32,6 +33,7 @@ let bombsPositions = []
 
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
+btnRestart.addEventListener('click', restartGame)
 
 function fixNumber(n) {
     return Number(n.toFixed(0))
@@ -175,6 +177,12 @@ function gameWin() {
         localStorage.setItem('record_time', playerTime)
         pResult.innerHTML = 'Primera vez que buen tiempo, ahora intenta superarlo'
     }
+
+    btnRestart.style.display = 'inline-block'
+}
+
+function restartGame() {
+    location.reload()
 }
 
 function ShowLives() {

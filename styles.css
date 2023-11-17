@@ -57,6 +57,12 @@ p {
     width: 100%;
 }
 
+#restar {
+    width: max-content;
+    margin-top: 8px;
+    display: none;
+}
+
 @media (max-width: 440px) {
     button { margin-top: 5px; }
     #up, #down { margin-left: 100%; margin-right: 100%;}
