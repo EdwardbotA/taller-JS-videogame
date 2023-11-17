@@ -178,7 +178,7 @@ function gameWin() {
         pResult.innerHTML = 'Primera vez que buen tiempo, ahora intenta superarlo'
     }
 
-    btnRestart.style.display = 'inline-block'
+    btnRestart.style.display = 'block'
 }
 
 function restartGame() {
